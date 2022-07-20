@@ -1,12 +1,14 @@
-import { Heading, Icon, useTheme, VStack } from 'native-base';
-import React, { useState } from 'react';
-import Logo from '../assets/logo_primary.svg';
-import { Button } from '../components/Button';
+import { useState } from 'react';
+import { VStack, Heading, Icon, useTheme } from 'native-base';
 import { Envelope, Key } from 'phosphor-react-native';
-import Input from '../components/Input';
 
-const SignIn = () => {
-  const [name, setName] = useState('Fall Guys');
+import Logo from '../assets/logo_primary.svg';
+
+import { Input } from '../components/Input';
+import { Button } from '../components/Button';
+
+export function SignIn() {
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
 
   const { colors } = useTheme();
@@ -14,6 +16,7 @@ const SignIn = () => {
   function handleSignIn() {
     console.log(name, password);
   }
+
   return (
     <VStack flex={1} alignItems='center' bg='gray.600' px={8} pt={24}>
       <Logo />
@@ -42,6 +45,4 @@ const SignIn = () => {
       <Button title='Entrar' w='full' onPress={handleSignIn} />
     </VStack>
   );
-};
-
-export default SignIn;
+}
