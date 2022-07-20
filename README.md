@@ -2,6 +2,8 @@
 
 Projeto desenvolvida durante o evento Ignite Lab - ReactNative da [Rocketseat](https://rocketseat.com.br)
 
+![Image](https://raw.githubusercontent.com/costabeto/rockethelp/master/src/assets/ignite-lab-react-native.gif)
+
 ## A solução
 
 Este projeto é uma aplicação desenvolvida em ReactNative com o objetivo de gerenciar solicitações de suporte em tempo real.
